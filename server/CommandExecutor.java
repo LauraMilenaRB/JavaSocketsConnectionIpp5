@@ -1,6 +1,8 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
+
 
 /* 
  * Class containing methods for taking the command string (a string with a digit 1-6)
@@ -16,15 +18,15 @@ public class CommandExecutor {
 	 * @param commandString		A string containing a single digit, 1-6;
 	 * @return			A string containing the results of the shell command.
 	 */
-	static String run(String commandString) {
+	static String run(String commandString)  throws Exception{
 		String result = "";
 		String line;
 		try {
 			// start the shell command running as a child processes
 			Process child = Runtime.getRuntime().exec("ghci");
 			child.waitFor();
-			OutputStream output = child.getOutputStream();
-			output.write(commandString);
+			OutputStream output2 = child.getOutputStream();
+			output2.write(commandString.getBytes());
 			/*output.write("x".getBytes());
 			Process child = Runtime.getRuntime().exec(commandString);*/
 
