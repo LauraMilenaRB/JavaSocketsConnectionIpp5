@@ -21,7 +21,12 @@ public class CommandExecutor {
 		String line;
 		try {
 			// start the shell command running as a child processes
-			Process child = Runtime.getRuntime().exec(commandString);
+			Process child = Runtime.getRuntime().exec("ghci");
+			child.waitFor();
+			OutputStream output = child.getOutputStream();
+			output.write(commandString);
+			/*output.write("x".getBytes());
+			Process child = Runtime.getRuntime().exec(commandString);*/
 
 			// open a BufferedReader to read the output of the child process
 			BufferedReader output = new BufferedReader(new InputStreamReader(child.getInputStream()));

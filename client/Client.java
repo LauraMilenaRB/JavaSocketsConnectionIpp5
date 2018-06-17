@@ -91,11 +91,11 @@ public class Client {
 	* @return command number 1-8
 	*/
 	public static String mainMenu() {
-		String menuSelection = "0";
+		String menuSelection = "";
 
-		System.out.print("Please provide number corresponding to the action you want to be performed: ");
+		System.out.print("Please provide command: ");
 		Scanner sc = new Scanner(System.in);
-		if (sc.hasNextInt()) menuSelection = sc.next();
+		if (sc.hasNext()) menuSelection = sc.next();
 		return menuSelection;
 	}
 
