@@ -41,6 +41,9 @@ public class Server {
 		catch (IOException ioe){
 			ioe.printStackTrace();
 		}
+		catch (Exception ioe){
+			ioe.printStackTrace();
+		}
 	}
 }
 

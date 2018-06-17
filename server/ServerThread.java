@@ -42,7 +42,10 @@ public class ServerThread extends Thread {
 		}
 		catch (IOException e) {
 			e.printStackTrace();
-		} 
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 		finally {
 			// close the connection to the client
 			try {
