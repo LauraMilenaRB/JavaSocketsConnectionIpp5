@@ -93,7 +93,7 @@ public class Client {
 	public static String mainMenu() {
 		String menuSelection = "";
 
-		System.out.print("Please provide command: ");
+		System.out.print("Prelude> ");
 		Scanner sc = new Scanner(System.in);
 		if (sc.hasNext()) menuSelection = sc.next();
 		return menuSelection;
