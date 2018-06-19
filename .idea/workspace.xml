@@ -3,15 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1a1cad0b-f8db-46b5-ba12-f1678b262215" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/haskell-java/README.md" afterPath="$PROJECT_DIR$/haskell-java/README.md" />
-      <change beforePath="$PROJECT_DIR$/haskell-java/img/ClassDiagram.png" afterPath="$PROJECT_DIR$/haskell-java/img/ClassDiagram.png" />
-      <change beforePath="$PROJECT_DIR$/haskell-java/pom.xml" afterPath="$PROJECT_DIR$/haskell-java/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/haskell-java/src/main/java/edu/eci/arsw/blueprints/Main.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/haskell-java/src/main/java/edu/eci/arsw/blueprints/restController/commands.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/haskell-java/src/main/resources/applicationContext.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/haskell-java/src/test/java/edu/eci/arsw/blueprints/test/persistence/impl/BlueprintFiltroRedundanciaTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/haskell-java/src/test/java/edu/eci/arsw/blueprints/test/persistence/impl/BlueprintFiltroSubmuestreoTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/haskell-java/src/test/java/edu/eci/arsw/blueprints/test/persistence/impl/InMemoryPersistenceTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/haskell-java/src/main/java/edu/eci/arsw/blueprints/controllers/commands.java" afterPath="$PROJECT_DIR$/haskell-java/src/main/java/edu/eci/arsw/blueprints/controllers/commands.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />

@@ -27,8 +27,8 @@ public class commands {
     public static String output = null;
     // the threads are kept track of with a linked list
     private static LinkedList<Thread> list = new LinkedList<Thread>();
-    @RequestMapping( value = "/{command}/{user}", method = RequestMethod.POST )
-    public String command(@PathVariable("command") String commad , @PathVariable String ip)  {
+    @RequestMapping( value = "/{command}/{user}", method = RequestMethod.GET )
+    public String command(@PathVariable("command") String commad , @PathVariable("user") String ip)  {
         // open a new PrintWriter and BufferedReader on the socket
         String outString = CommandExecutor.run(commad);
 
