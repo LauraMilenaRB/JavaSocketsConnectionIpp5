@@ -15,7 +15,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Client.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/Client.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="456">
@@ -27,12 +27,26 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ServerThread.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/ServerThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="27" column="87" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="27" selection-end-column="87" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ClientThread.class" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/ClientThread.class">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1529273074782" expanded="false" signature="3:117" ph="/.../" />
+                <marker date="1529273074782" expanded="true" signature="616:639" ph="{}" />
+                <marker date="1529273074782" expanded="true" signature="663:686" ph="{}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -53,7 +67,7 @@
         <entry file="file://$PROJECT_DIR$/server/CommandExecutor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="28" column="101" lean-forward="true" selection-start-line="28" selection-start-column="101" selection-end-line="28" selection-end-column="101" />
+              <caret line="28" column="101" lean-forward="false" selection-start-line="28" selection-start-column="101" selection-end-line="28" selection-end-column="101" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -66,7 +80,12 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1529273068433" expanded="false" signature="3:117" ph="/.../" />
+                <marker date="1529273068433" expanded="true" signature="497:520" ph="{}" />
+                <marker date="1529273068433" expanded="true" signature="578:601" ph="{}" />
+                <marker date="1529273068433" expanded="true" signature="649:672" ph="{}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -155,7 +174,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ARSWLab04-API_REST-peticionesHTTP" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -264,12 +283,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1529263547396</updated>
-      <workItem from="1529263549874" duration="25215000" />
+      <workItem from="1529263549874" duration="27202000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25215000" />
+    <option name="totallyTimeSpent" value="27202000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="752" extended-state="6" />
@@ -343,16 +362,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/ServerThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="45" column="15" lean-forward="false" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <marker date="1529273068433" expanded="false" signature="3:117" ph="/.../" />
+            <marker date="1529273068433" expanded="true" signature="497:520" ph="{}" />
+            <marker date="1529273068433" expanded="true" signature="578:601" ph="{}" />
+            <marker date="1529273068433" expanded="true" signature="649:672" ph="{}" />
           </folding>
         </state>
       </provider>
@@ -360,7 +374,7 @@
     <entry file="file://$PROJECT_DIR$/server/CommandExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="28" column="101" lean-forward="true" selection-start-line="28" selection-start-column="101" selection-end-line="28" selection-end-column="101" />
+          <caret line="28" column="101" lean-forward="false" selection-start-line="28" selection-start-column="101" selection-end-line="28" selection-end-column="101" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -371,7 +385,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1529273074782" expanded="false" signature="3:117" ph="/.../" />
+            <marker date="1529273074782" expanded="true" signature="616:639" ph="{}" />
+            <marker date="1529273074782" expanded="true" signature="663:686" ph="{}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -392,6 +410,14 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/ServerThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="27" column="87" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="27" selection-end-column="87" />
+          <folding />
         </state>
       </provider>
     </entry>
