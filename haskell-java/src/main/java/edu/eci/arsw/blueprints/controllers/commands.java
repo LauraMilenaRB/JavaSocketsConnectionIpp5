@@ -1,4 +1,4 @@
-package edu.eci.arsw.blueprints.restController;
+package edu.eci.arsw.blueprints.controllers;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -19,7 +19,7 @@ import java.util.LinkedList;
  * @author LauraRamosB
  */
 @RestController
-@RequestMapping( "commands" )
+@RequestMapping( "/commands" )
 public class commands {
     private static String hostName ="18.236.157.85";
     // create a variable to initialize new threads with
