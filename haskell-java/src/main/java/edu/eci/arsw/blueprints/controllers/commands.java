@@ -30,8 +30,9 @@ public class commands {
     @RequestMapping( value = "/{command}/{user}", method = RequestMethod.GET )
     public String command(@PathVariable("command") String commad , @PathVariable("user") String ip)  {
         // open a new PrintWriter and BufferedReader on the socket
+        System.out.print(commad);
         String outString = CommandExecutor.run(commad);
-
+        System.out.print(outString);
         return outString;
     }
 
