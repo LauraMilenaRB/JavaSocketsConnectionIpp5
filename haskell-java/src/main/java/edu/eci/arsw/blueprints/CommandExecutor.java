@@ -26,13 +26,13 @@ public class CommandExecutor {
 	 * @param commandString		A string containing a single digit, 1-6;
 	 * @return			A string containing the results of the shell command.
 	 */
-	public static  String run(String commandString) {
+	public static  String run(String commandString,Process child) {
 		String result = "";
 		String line;
 		boolean error=false;
 		try {
 			// start the shell command running as a child processes
-            Process child = Runtime.getRuntime().exec("ghci");
+            //Process child = Runtime.getRuntime().exec("ghci");
             BufferedWriter w = new BufferedWriter (new OutputStreamWriter (child.getOutputStream()));
             w.write(commandString);
             w.close();
