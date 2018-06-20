@@ -25,25 +25,23 @@ public class commands {
     // create a variable to initialize new threads with
     private static Thread thrd = null;
     public static String output = null;
-    private HashMap<String,Process> process= new HashMap<>();
     // the threads are kept track of with a linked list
-    private static LinkedList<Thread> list = new LinkedList<Thread>();
     @RequestMapping( value = "/{command}/{user}", method = RequestMethod.GET )
     public String command(@PathVariable("command") String commad , @PathVariable("user") String ip)  {
         // open a new PrintWriter and BufferedReader on the socket
         System.out.print(commad);
-        String outString = CommandExecutor.run(commad,process.get(ip));
+        String outString = CommandExecutor.run(commad,ip);
         System.out.print(outString);
         return outString;
     }
 
-    @RequestMapping( value = "/init/{user}", method = RequestMethod.POST )
-    public void command2( @PathVariable("user") String ip) throws IOException {
+    @RequestMapping( value = "/init/{user}", method = RequestMethod.GET )
+    public boolean command2( @PathVariable("user") String ip) throws IOException, InterruptedException {
         // open a new PrintWriter and BufferedReader on the socket
-        process.put(ip,Runtime.getRuntime().exec("ghci"));
-        BufferedWriter w = new BufferedWriter (new OutputStreamWriter(process.get(ip).getOutputStream()));
-        w.write("let x=5");
-        w.close();
+        File file = new File(ip+".txt");
+
+        return true;
+
 
     }
 
