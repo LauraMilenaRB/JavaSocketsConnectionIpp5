@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import java.io.*;
 import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.Map;
 
 /**
  *
@@ -25,24 +26,25 @@ public class commands {
     // create a variable to initialize new threads with
     private static Thread thrd = null;
     public static String output = null;
-    // the threads are kept track of with a linked list
+    public HashMap<String,String > process=new HashMap<>();
+
     @RequestMapping( value = "/{command}/{user}", method = RequestMethod.GET )
     public String command(@PathVariable("command") String commad , @PathVariable("user") String ip)  {
         // open a new PrintWriter and BufferedReader on the socket
-        System.out.print(commad);
-        String outString = CommandExecutor.run(commad,ip);
-        System.out.print(outString);
+
+        String outString = CommandExecutor.run(commad,process.get(ip));
+
+        if(!outString.contains("<interactive>:")){
+            String comandnew=process.get(ip)+commad+"\n";
+            process.put((String)ip,(String)comandnew);
+        }
         return outString;
     }
 
-    @RequestMapping( value = "/init/{user}", method = RequestMethod.GET )
+    @RequestMapping( value = "initialConsole/{user}", method = RequestMethod.GET )
     public boolean command2( @PathVariable("user") String ip) throws IOException, InterruptedException {
-        // open a new PrintWriter and BufferedReader on the socket
-        File file = new File(ip+".txt");
-
+        process.put(ip,"");
         return true;
-
-
     }
 
 }
