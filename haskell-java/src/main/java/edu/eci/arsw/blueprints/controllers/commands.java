@@ -22,27 +22,34 @@ import java.util.Map;
 @RestController
 @RequestMapping( "/commands" )
 public class commands {
-    private static String hostName ="18.236.157.85";
-    // create a variable to initialize new threads with
-    private static Thread thrd = null;
-    public static String output = null;
     public HashMap<String,String > process=new HashMap<>();
 
+    /**
+     *
+     * @param commad comando digitado por el usuario
+     * @param ip identificador de usuario
+     * @return Output generada al ejecutar el comando
+     */
     @RequestMapping( value = "/{command}/{user}", method = RequestMethod.GET )
     public String command(@PathVariable("command") String commad , @PathVariable("user") String ip)  {
-        // open a new PrintWriter and BufferedReader on the socket
-
-        String outString = CommandExecutor.run(commad,process.get(ip));
-
-        if(!outString.contains("<interactive>:")){
+        //Ejecutamos el comando digitado por el usuario
+        String outputString = CommandExecutor.run(commad,process.get(ip));
+        //Si la salida del comando digitado por el usuario genera outputError no se agrega el comando a la pila de comandos
+        if(!outputString.contains("<interactive>:")){
             String comandnew=process.get(ip)+commad+"\n";
             process.put((String)ip,(String)comandnew);
         }
-        return outString;
+        return outputString;
     }
 
+    /**
+     *
+     * @param ip ip identificador de usuario
+     * @return
+     */
     @RequestMapping( value = "initialConsole/{user}", method = RequestMethod.GET )
-    public boolean command2( @PathVariable("user") String ip) throws IOException, InterruptedException {
+    public boolean command2( @PathVariable("user") String ip){
+        //Se inicializa una nueva pila de comandos para el usuario correspondiente
         process.put(ip,"");
         return true;
     }
