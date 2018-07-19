@@ -35,7 +35,7 @@ public class CommandExecutor {
 		boolean error=false;
 		try {
 			// start the shell command running as a child processes
-            Process child= Runtime.getRuntime().exec("ghci");
+            Process child= Runtime.getRuntime().exec("stack exec -- ghci");
 			// open a BufferedWrite the input of the child process
 			BufferedWriter w = new BufferedWriter (new OutputStreamWriter (child.getOutputStream()));
 			// open a BufferedReader to read the output of the child process
