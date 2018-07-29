@@ -3,8 +3,11 @@
 
 ### Run Aplication
 
---install mvn and compile\n
+--install mvn and compile
+
 $ mvn package
 
 --run proyect
-$ mvn spring-boot:run\n
+
+$ mvn spring-boot:run
+
